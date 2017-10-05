@@ -1,0 +1,41 @@
+[
+  {
+    "id": 0,
+    "firstName": "Tommy",
+    "lastName": "Jones",
+    "dob": "12/12/1212",
+    "addressLine1": "hotdog",
+    "addressLine2": "hotdog",
+    "city": "hotdog",
+    "state": "CA",
+    "zip": "hotdog",
+    "phone": "(555) 555-5252",
+    "transportation": "car",
+    "driversLicense": "I1234567",
+    "licensePlate": "BOBALIF",
+    "availability": "open",
+    "userName": "tommy",
+    "pass": "tommy",
+    "type": "server"
+  },
+  {
+    "id": 1,
+    "firstName": "Eric",
+    "lastName": "Robles",
+    "dob": "17",
+    "addressLine1": "hotdog",
+    "addressLine2": "hotdog",
+    "city": "hotdog",
+    "state": "CA",
+    "zip": "hotdog",
+    "phone": "(555) 555-5255",
+    "transportation": "bicycle",
+    "driversLicense": "I1234568",
+    "licensePlate": "N/A",
+    "availability": "weekends",
+    "userName": "eric",
+    "pass": "eric",
+    "type": "server"
+    
+  }
+]

@@ -1,0 +1,37 @@
+<div class="cusProfileBG" style="background:transparent url('https://thumbs.dreamstime.com/z/green-tea-background-6969803.jpg') no-repeat center center /cover">
+  <div class="container">
+    <h1>Customer Profile</h1>
+
+    <h2>{{ customer.firstName }} {{ customer.lastName }}</h1>
+
+      <div class="contentContainer">
+        <h3>Contact Info</h3>
+        <p><strong>Phone: </strong> {{ customer.phone }}</p>
+        <p><strong>Email: </strong> {{ customer.email }}</p>
+        <p><strong>Date of Birth: </strong> {{ customer.dob }}</p>
+        <p><strong>Address: </strong> {{ customer.addressLine }}</p>
+        <p><strong>City: </strong> {{ customer.city }}</p>
+        <p><strong>State: </strong> {{ customer.state }}</p>
+        <p><strong>Zip: </strong> {{ customer.zip }}</p>
+
+        <h3>Credit Card Info</h3>
+        <p><strong>Credit Card Number: </strong> {{ customer.ccNum }}</p>
+        <p><strong>Expiration Date: </strong> {{ customer.expDate }}</p>
+        <p><strong>Card Type: </strong> {{ customer.ccType }}</p>
+        <p><strong>Security Code: </strong> {{ customer.secCode }}</p>
+
+        <h3>Account Info</h3>
+        <p><strong>User Name: </strong> {{ customer.userName }}</p>
+        <p><strong>Password: </strong> {{ customer.pass }}</p>
+
+        <a><button ui-sref="app.editCustomer({ id: {{customer.id}} })" class="btn btn-info">Update</button></a>
+        <button ng-click="deleteAccount()" class="btn btn-danger">Delete</button>
+      </div>
+      <!-- <div class="contentContainer">
+    <h3 ng-show="orderMessage">Your Order Will Be Delivered In...</h3>
+    <h3 ng-show="countdown">{{ minutes }}m {{ seconds }}s</h3>
+    <h3 ng-show="expired">Expired!!!</h3>
+    <h3 ng-show="errorCount">PLEASE SUBMIT AN ORDER TO SEE CURRENT ORDER STATUS</h3>
+  </div> -->
+  </div>
+</div>

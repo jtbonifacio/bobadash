@@ -1,0 +1,114 @@
+[
+  {
+    "id":0,
+    "itemName": "Milk Tea",
+    "info": "Traditional sweet tea with milk",
+    "price": 5,
+    "image": "http://www.85cbakerycafe.com/wp-content/uploads/2016/05/85C-Bakery_Drinks_icedBobaMilkTea_01.jpg"
+  },
+  {
+    "id": 1,
+    "itemName": "Thai Tea",
+    "info": "Blend of strong black tea, vanilla bean, cardamom and anise",
+    "price": 5,
+    "image": "http://thedish.restaurant.com/wp-content/uploads/2014/06/thaiicedtea1-410x402-300x294.jpg"
+  },
+  {
+    "id": 2,
+    "itemName": "Sunset Passion",
+    "info": "Made from real passion fruit, and hand-squeezed to preserve its natural essence",
+    "price": 5,
+    "image": "http://www.85cbakerycafe.com/wp-content/uploads/2016/05/85C-Bakery_Drinks_icedPassionfruitGreenTea_011.jpg"
+  },
+  {
+    "id": 3,
+    "itemName": "Herbal Tea",
+    "info": "Quenching and balanced blend of seven distinct types of herbs and teas",
+    "price": 5,
+    "image": "http://d2mdn1s78c9h86.cloudfront.net/wp-content/uploads/2015/06/tea-1-JAYK9431-690x518.jpg"
+  },
+  {
+    "id": 4,
+    "itemName": "Taro Slush",
+    "info": "Fresh taro and brewed in loose-leaf jasmine tea ",
+    "price": 5,
+    "image": "https://i.pinimg.com/236x/bc/38/9c/bc389c6a8528b03b350a6e32179f4051--tea-houses-volcanoes.jpg"
+  },
+  {
+    "id": 5,
+    "itemName": "Honey Dew",
+    "info": "Combine melon, yogurt, and apple juice concentrate.",
+    "price": 5,
+    "image": "http://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/2/14/1/SH1C13_Honeydew-Smoothie_s4x3.jpg.rend.hgtvcom.616.462.suffix/1382542472158.jpeg"
+  },
+  {
+    "id": 6,
+    "itemName": "Mango Peach",
+    "info": "Mango and Peach blended with milk, yogurt, sugar, vanilla and ice.",
+    "price": 5,
+    "image": "http://www.5minutebreakfast.com/wp-content/uploads/2014/06/mango-peach-smoothie.png"
+  },
+  {
+    "id": 7,
+    "itemName": "Strawberry Slush",
+    "info": "Strawberries blended with milk, yogurt, sugar, vanilla and ice.",
+    "price": 5,
+    "image": "http://cf.dinner-mom.com/wp-content/uploads/2014/02/Simple-Strawberry-Smoothie-with-Yogurt-IMG_0915-001.jpg"
+  },
+  {
+    "id": 8,
+    "itemName": "Cafe Latte",
+    "info": "Milk steamed to microfoam, served in a glass with a half shot of espresso",
+    "price": 5,
+    "image": "http://www.latteartguide.com/wp-content/uploads/2013/11/cafe-latte1.jpg"
+  },
+  {
+    "id": 9,
+    "itemName": "Caramel Machiatto",
+    "info": "Freshly steamed milk with with espresso topped with caramel drizzle",
+    "price": 5,
+    "image": "https://globalassets.starbucks.com/assets/2e128451552f4b01a2dedc568008fe06.jpg"
+  },
+  {
+    "id": 10,
+    "itemName": "Hazelnut Coffee",
+    "info": "French vanilla, hazelnut, and cinnamon",
+    "price": 5,
+    "image": "http://img.aws.livestrongcdn.com/ls-article-image-673/cpi.studiod.com/www_livestrong_com/photos.demandstudios.com/getty/article/94/201/152537316_XS.jpg"
+  },
+  {
+    "id": 11,
+    "itemName": "Cappuccino",
+    "info": "Double espresso and hot milk, with the surface topped with foamed milk.",
+    "price": 5,
+    "image": "https://www.nespresso.com/ncp/res/uploads/recipes/377c71f2069b1dba47f10aeb701d576d889101ee.jpg"
+  },
+  {
+    "id": 12,
+    "itemName": "Boba",
+    "info": "Cooked to a perfect soft and chewy consistency, and lightly sweetened with honey.",
+    "price": 0.50,
+    "image": "http://7leavescafe.com/wp-content/uploads/2015/04/Boba_crop_Web.jpg"
+  },
+  {
+    "id": 13,
+    "itemName": "Grass Jelly",
+    "info": "A jelly dessert made from boiling mesona, a mint-like plant",
+    "price": 0.50,
+    "image": "http://7leavescafe.com/wp-content/uploads/2015/04/Grass_Jelly_Web.jpg"
+  },
+  {
+    "id": 14,
+    "itemName": "Aloe Vera",
+    "info": "Slight grape-like taste",
+    "price": 0.50,
+    "image": "http://7leavescafe.com/wp-content/uploads/2015/04/Aloe_Vera_Web.jpg"
+  },
+  {
+    "id": 15,
+    "itemName": "Egg Pudding",
+    "info": "Sweet and delicate texture pairs wonderfully with milk teas ",
+    "price": 0.50,
+    "image": "http://7leavescafe.com/wp-content/uploads/2015/04/Egg_Pudding_crop_Web.jpg"
+  }
+]

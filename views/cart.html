@@ -1,0 +1,69 @@
+<div class="container">
+  <table id="cart" class="table table-hover table-condensed">
+    <thead>
+      <tr>
+        <th style="width:50%">Product</th>
+        <th style="width:10%">Price</th>
+        <th style="width:8%">Quantity</th>
+        <th style="width:22%" class="text-center">Subtotal</th>
+        <th style="width:10%"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in cart">
+        <td data-th="Drinks">
+          <div class="row">
+            <div class="col-sm-2 hidden-xs"><img src={{item.image}} class="img-responsive" /></div>
+            <div class="col-sm-10">
+              <h4 class="nomargin">{{ item.itemName }}</h4>
+              <p>{{ item.info }}</p>
+            </div>
+          </div>
+        </td>
+        <td data-th="Price">{{ item.price | currency}}</td>
+        <td data-th="Quantity">
+          <p type="number" class="text-center">1</p>
+        </td>
+        <td data-th="Subtotal" class="text-center">{{ item.price | currency}}</td>
+        <td class="actions" data-th="">
+          <button ng-click="deleteItem(item)" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <td colspan="2" class="hidden-xs"></td>
+      <td class="hidden-xs text-center"><strong>Total {{total | currency}}</strong></td>
+      <td colspan="2" class="hidden-xs"></td>
+    </tfoot>
+  </table>
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>{{heading}}</h2>
+      <h3>Credit Card Info</h3>
+      <div class="form-group">
+        <label>Credit Card Number:</label>
+        <input type="text" class="form-control" ng-model="currentUser.ccNum">
+        <label>Expiration Date:</label>
+        <input type="text" class="form-control" ng-model="currentUser.expDate">
+        <label>Card Type:</label>
+        <input type="text" class="form-control" ng-model="currentUser.ccType">
+        <label>Security Code:</label>
+        <input type="text" class="form-control" ng-model="currentUser.secCode">
+        <label>Phone:</label>
+        <input type="text" class="form-control" ng-model="currentUser.phone">
+        <label>Address:</label>
+        <input type="text" class="form-control" ng-model="currentUser.addressLine">
+        <label>City:</label>
+        <input type="text" class="form-control" ng-model="currentUser.city">
+        <label>State:</label>
+        <input type="text" class="form-control" ng-model="currentUser.state">
+        <label>Zip:</label>
+        <input type="text" class="form-control" ng-model="currentUser.zip">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <button ng-click="submitOrder()" ng-show="currentUser.secCode" type="submit" class="finalcheckout btn btn-sm btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></button>
+
+    </div>
+
+  </div>

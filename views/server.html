@@ -1,0 +1,23 @@
+<div class="container serverBG">
+
+  <h1>Server Profile</h1>
+  <h2>{{server.firstName}} {{server.lastName}}</h2>
+
+  <h3>Contact Info</h3>
+  <p><strong>Birthday:</strong> {{ server.dob | date: 'MM/dd/yy' }}</p>
+  <p><strong>Address:</strong> {{ server.addressLine1}} {{ server.addressLine2 }}</p>
+  <p><strong>City:</strong> {{ server.city }}</p>
+  <p><strong>State:</strong> {{ server.state }}</p>
+  <p><strong>Zip:</strong> {{ server.zip }}</p>
+  <p><strong>Phone:</strong> {{ server.phone }}</p>
+  <h3>Transportation Info</h3>
+  <p><strong>Transportation:</strong> {{ server.transportation }}</p>
+  <p><strong>Available:</strong> {{ server.availability }}</p>
+
+  <h3>Account Info</h3>
+  <p><strong>User Name:</strong> {{ server.userName }}</p>
+  <p><strong>Password:</strong> {{ server.pass }}</p>
+
+  <button ui-sref="app.editServer({id: {{server.id}} })" class="btn btn-info">Update</button>
+  <button ng-click="deleteServer()" class="btn btn-danger">Delete</button>
+</div>

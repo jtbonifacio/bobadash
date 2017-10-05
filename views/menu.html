@@ -1,0 +1,37 @@
+<h1 ng-show="map" class="menuHeader text-center">Are we close by?</h1>
+
+<div ng-show="map" class="container">
+  <ng-map center="current-location">
+    <marker position="current-location" animation="Animation.BOUNCE"></marker>
+    <directions draggable="true" travel-mode="DRIVING" origin="2850 Red Hill Ave, Sana Ana, CA 92705" destination="{{address}}">
+    </directions>
+  </ng-map>
+</div>
+
+<div ng-show="map" class="container menuText">
+  <h4 class="locationHeader">Please enter your location below</h4>
+  <div class="locationWrapper">
+    <button class="btn btn-sm icon-btn" ng-click="currentLocation()">
+        <img class="icon" src="./images/current_Location_Icon.png" />
+    </button>
+    <input type="text" ng-model="address" />
+    <button class="btn btn-sm btn-success go-btn" ng-click="getInfo()">Go</button>
+  </div>
+  <h4 class="text-danger" ng-show="deliver">Sorry! We do not deliver to this location at this current time! Please check again in the future!</h4>
+</div>
+<div ng-show="menu" class="container">
+  <div class="row">
+    <div ng-repeat="item in items" class=" col-md-3 containerTest">
+      <h3 class="itemName">{{item.itemName}}</h3>
+      <img class="resize image" src={{item.image}} alt="Item Alt">
+      <div class="middle">
+        <div class="text">{{item.info}}</div>
+      </div>
+      <p class="prices">{{item.price | currency }}</p>
+      <button class="btn btn-sm btn-primary" ng-click="addItem(item)">Add item</button>
+    </div>
+  </div>
+  <div class="checkout row">
+    <button ui-sref="app.cart" class="checkoutbtn btn btn-success btn-lg">Checkout</button>
+  </div>
+</div>

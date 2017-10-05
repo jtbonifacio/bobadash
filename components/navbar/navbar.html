@@ -1,0 +1,43 @@
+<div class="navbar-wrapper">
+  <nav class="navbar navbar-static-top navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+      </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <div class="dash">
+          <figure>
+            <div class="dashing crop">
+              <img src="../logo/bobadash_logo_v2.png" alt="">
+            </div>
+            <div class="dashing-reverse crop">
+              <img src="../logo/bobadash_logo_v2.png" alt="">
+            </div>
+          </figure>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a class="navCategories" ui-sref="app.home">Home</a></li>
+          <li><a class="navCategories" ui-sref="app.menu">Menu</a></li>
+          <li ng-show="{{ currentUser.type == 'customer' }}"><a class="navCategories" ui-sref="app.showCustomer({id: {{ currentUser.id }} })">Profile</a></li>
+          <li ng-show="{{ currentUser.type == 'server' }}"><a class="navCategories" ui-sref="app.showServer({id: {{ currentUser.id }} })">Profile</a></li>
+          <li><a class="navCategories" ui-sref="app.about">About</a></li>
+        </ul>
+        <button ng-if="currentUser == undefined" class="btn-info btn-sm col-sm-1 pull-right dropdown signin">
+            <span class="dropdown-toggle" data-toggle="dropdown">Sign Up</span>
+            <ul class="dropdown-menu">
+              <li><a class="navCategories" ui-sref="app.account">Customer Account</a></li>
+              <li><a class="navCategories" ui-sref="app.accountEmp">Server Account</a></li>
+            </ul>
+        </button>
+        <button ng-if="currentUser == undefined" ui-sref="app.signin" class="btn-info col-sm-1 btn-sm pull-right signin">Sign In</button>
+        <button ng-if="currentUser != undefined" ng-click="logout()" class="btn-info col-sm-1 btn-sm pull-right signin">Sign Out</button>
+      </div>
+    </div>
+  </nav>
+</div>

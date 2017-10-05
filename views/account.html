@@ -1,0 +1,77 @@
+<div class="container">
+  <h1 class="profile">{{heading}}</h1>
+  <div class="row1">
+    <h3 id="profileHeader">Personal Information</h3>
+    <div class="form-group col-md-6">
+      <label>First Name</label>
+      <input type="text" class="form-control" placeholder="First Name" ng-model="customer.firstName">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Last Name</label>
+      <input type="text" class="form-control" placeholder="Last Name" ng-model="customer.lastName">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Email</label>
+      <input type="text" class="form-control" placeholder="Email" ng-model="customer.email">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Phone</label>
+      <input type="text" class="form-control" placeholder="Phone" ng-model="customer.phone">
+    </div>
+    <div class="form-group col-md-4">
+      <label>DOB</label>
+      <input type="text" class="form-control" placeholder="DOB" ng-model="customer.dob">
+    </div>
+  </div>
+  <div class="row2">
+    <h3 id="profileHeader">Billing Address</h3>
+    <div class="form-group col-md-12">
+      <label>Street Address</label>
+      <input type="text" class="form-control" placeholder="Street Address" ng-model="customer.addressLine">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Zip</label>
+      <input type="text" class="form-control" placeholder="Zip" ng-model="customer.zip">
+    </div>
+    <div class="form-group col-md-4">
+      <label>City</label>
+      <input type="text" class="form-control" placeholder="City" ng-model="customer.city">
+    </div>
+    <div class="form-group col-md-4">
+      <label>State</label>
+      <input type="text" class="form-control" placeholder="State" ng-model="customer.state">
+    </div>
+  </div>
+  <div class="row3">
+    <h3 id="profileHeader">Billing Information</h3>
+    <div class="form-group col-md-12">
+      <label>Credit Card Number</label>
+      <input type="text" class="form-control" placeholder="Credit Card #" ng-model="customer.ccNum">
+    </div>
+    <div class="form-group col-md-4">
+      <label>CC Type</label>
+      <input type="text" class="form-control" placeholder="Type: visa/mastercard/amex" ng-model="customer.ccType">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Expiration Date</label>
+      <input type="text" class="form-control" placeholder="Expiration Date" ng-model="customer.expDate">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Security Code</label>
+      <input type="text" class="form-control" placeholder="Security Code" ng-model="customer.secCode">
+    </div>
+  </div>
+  <div class="row4">
+    <h3 id="profileHeader">User Information</h3>
+    <div class="form-group col-md-6">
+      <label>User Name</label>
+      <input type="text" class="form-control" placeholder="Enter a new username" ng-model="customer.userName">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Password</label>
+      <input type="text" class="form-control" placeholder="Enter a new password" ng-model="customer.pass">
+    </div>
+  </div>
+  <button ng-click="submitAccount()" ng-show="submitButton" class="btn cbtn btn-primary btn-lg pull-right ">Submit</button>
+  <button ng-click="saveAccount()" ng-show="saveButton" class="btn cbtn btn-primary btn-lg pull-right">Save</button>
+</div>
